@@ -11,9 +11,9 @@ function App() {
       <hr />
       {/* <Form/> */}
 <hr />
-{/* <Map/> */}
+<Map/>
 <hr />
-<Form3/>
+{/* <Form3/> */}
     </>
   );
 }
