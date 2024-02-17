@@ -1,4 +1,5 @@
 import { useState } from "react";
+import BackButton from "./commom/backbutton";
 
 function Form2() {
   const [data, setData] = useState(initiateState());
@@ -45,6 +46,7 @@ function Form2() {
 
   return (
     <>
+      <BackButton/>
       <h1 className="form-heading">Registration Form</h1>
       <form autoComplete="on">
         <table>

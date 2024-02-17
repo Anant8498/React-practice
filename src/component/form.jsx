@@ -1,4 +1,5 @@
 import { useState } from "react";
+import BackButton from "./commom/backbutton";
 
 function Form() {
   const [data, setdata] = useState(initialstate());
@@ -30,6 +31,7 @@ function Form() {
 
   return (
     <>
+    <BackButton/>
       <h1>REGISTRATION FORM</h1>
       <form>
         <label htmlFor="firstname">firstname:</label>

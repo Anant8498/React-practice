@@ -1,11 +1,10 @@
 import { useState } from "react";
-
+import BackButton from "./commom/backbutton";
 function Form3() {
   const [data, setData] = useState({
     firstName: "",
     lastName: "",
-    phnumber: ""
-    
+    phnumber: "",
   });
 
   // function firstNameOnChangeHandler(event) {
@@ -30,36 +29,39 @@ function Form3() {
   }
 
   return (
-    <form>
-      <label>First name</label>
-      <input
-        type="text"
-        value={data.firstName}
-        name="firstName"
-        onChange={onChangeHandler}
-      ></input>
-      <br />
-      <label>Last name</label>
-      <input
-        type="text"
-        value={data.lastName}
-        name="lastName"
-        onChange={onChangeHandler}
-      ></input>
-      <br />
+    <>
+      <BackButton />
+      <form>
+        <label>First name</label>
+        <input
+          type="text"
+          value={data.firstName}
+          name="firstName"
+          onChange={onChangeHandler}
+        ></input>
+        <br />
+        <label>Last name</label>
+        <input
+          type="text"
+          value={data.lastName}
+          name="lastName"
+          onChange={onChangeHandler}
+        ></input>
+        <br />
 
-      <label>phone Number</label>
-      <input
-        type="tel"
-        value={data.phnumber}
-        name="phnumber"
-        onChange={onChangeHandler}
-      />
-      <br />
-      <button type="button" onClick={submit}>
-        Submit
-      </button>
-    </form>
+        <label>phone Number</label>
+        <input
+          type="tel"
+          value={data.phnumber}
+          name="phnumber"
+          onChange={onChangeHandler}
+        />
+        <br />
+        <button type="button" onClick={submit}>
+          Submit
+        </button>
+      </form>
+    </>
   );
 }
 
