@@ -16,13 +16,13 @@ function Cardauthor() {
   const [data, setData] = useState(library);
   return (
     <>
-    <BackButton/>
-    <div className="row">
-      {data.map(function (item) {
-        console.log(item);
-        return <Card1 data={item} fullData={data} setData={setData} />;
-      })}
-    </div>
+      <BackButton />
+      <div className="row">
+        {data.map(function (item) {
+          console.log(item);
+          return <Card1 data={item} fullData={data} setData={setData} />;
+        })}
+      </div>
     </>
   );
 }
