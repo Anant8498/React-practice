@@ -1,13 +1,12 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function Card1({ data, setData, fullData }) {
-
   function mapData(author) {
     const result = fullData.map(function (item) {
       if (item.author === author) {
         item.author = "Anant Tyagi";
       }
-      
+
       return item;
     });
     setData(result);

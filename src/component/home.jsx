@@ -12,6 +12,7 @@ function Home() {
         <li><Link to={"/userdata"}>User data</Link></li>
         <li><Link to={"/carddelete"}>Carddelete</Link></li>
         <li><Link to={"/cardauthor"}>Cardauthor</Link></li>
+        <li><Link to={"/table"}>Table</Link></li>
       </ul>
     </section>
   );
