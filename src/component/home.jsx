@@ -13,6 +13,8 @@ function Home() {
         <li><Link to={"/carddelete"}>Carddelete</Link></li>
         <li><Link to={"/cardauthor"}>Cardauthor</Link></li>
         <li><Link to={"/table"}>Table</Link></li>
+        <li><Link to={"/localdata"}>localdata</Link></li>
+
       </ul>
     </section>
   );

@@ -10,6 +10,7 @@ import NotFound from "./component/notfound";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Carddelete from "./component/carddelete";
 import Cardauthor from "./component/cardauthor";
+import Localdata from "./component/localdata";
 
 import Table from "./component/table";
 
@@ -32,6 +33,7 @@ root.render(
         <Route path="/cardauthor" element={<Cardauthor />} />
 
         <Route path="/table" element={<Table />} />
+        <Route path="/localdata" element={<Localdata />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
