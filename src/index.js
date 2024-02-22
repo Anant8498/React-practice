@@ -11,6 +11,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Carddelete from "./component/carddelete";
 import Cardauthor from "./component/cardauthor";
 import Localdata from "./component/localdata";
+import Form_submit from "./component/form_submit";
 
 import Table from "./component/table";
 
@@ -34,6 +35,7 @@ root.render(
 
         <Route path="/table" element={<Table />} />
         <Route path="/localdata" element={<Localdata />} />
+        <Route path="/form_submit" element={<Form_submit />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

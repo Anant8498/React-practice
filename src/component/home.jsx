@@ -14,6 +14,7 @@ function Home() {
         <li><Link to={"/cardauthor"}>Cardauthor</Link></li>
         <li><Link to={"/table"}>Table</Link></li>
         <li><Link to={"/localdata"}>localdata</Link></li>
+        <li><Link to={"/form_submit"}>Form_submit</Link></li>
 
       </ul>
     </section>

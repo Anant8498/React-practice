@@ -4,7 +4,7 @@ function Localdata() {
   const [data, setdata] = useState([]);
 
   useEffect(function () {
-    fetch("http://localhost:8001/data")
+    fetch("http://localhost:8000/data")
       .then(function (res) {
         return res.json();
       })
