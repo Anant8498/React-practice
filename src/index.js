@@ -12,8 +12,9 @@ import Carddelete from "./component/carddelete";
 import Cardauthor from "./component/cardauthor";
 import Localdata from "./component/localdata";
 import Form_submit from "./component/form_submit";
-
 import Table from "./component/table";
+import Registration from "./component/validate_form";
+import { ToastContainer } from "react-toastify";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -22,6 +23,18 @@ root.render(
   // </React.StrictMode>
 
   <>
+<ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -36,6 +49,7 @@ root.render(
         <Route path="/table" element={<Table />} />
         <Route path="/localdata" element={<Localdata />} />
         <Route path="/form_submit" element={<Form_submit />} />
+        <Route path="/validate_form" element={<Registration />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
